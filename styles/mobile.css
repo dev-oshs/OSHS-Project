@@ -44,6 +44,7 @@
     top: 0;
     right: 0;
     height: 100vh;
+    z-index: 999;
   }
   header .nav-bar button svg {
     display: block;
@@ -83,7 +84,7 @@
     grid-template-columns: repeat(1, 300px);
   }
   footer {
-    grid-template-columns: repeat(1, 250px);
+    grid-template-columns: repeat(1, 280px);
     grid-template-rows: repeat(3, 100px);
     gap: 150px;
   }

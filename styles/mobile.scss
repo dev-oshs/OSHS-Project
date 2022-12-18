@@ -64,6 +64,8 @@
             top: 0;
             right: 0;
             height: 100vh;
+            z-index: 999;
+
             button{
                 svg{
                     display: block;
@@ -123,7 +125,7 @@
     }
 
     footer{
-        grid-template-columns: repeat(1, 250px);
+        grid-template-columns: repeat(1, 280px);
         grid-template-rows: repeat(3, 100px);
         gap: 150px;
 

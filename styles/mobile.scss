@@ -135,7 +135,7 @@
         .info-container{
             .number-container{
                 .main-content{
-                    grid-template-columns: repeat(1, 250px);
+                    grid-template-columns: repeat(1, auto);
                     grid-template-rows: repeat(4, 90px);
 
                 }

@@ -1,0 +1,629 @@
+$primary-color : #141b80;
+$secondary-color: #ffcc00;
+$background-color: #ffffff;
+$white: #ffffff;
+$black: #000000;
+$font: "Trebuchet MS";
+$hover-s-c: #d1a804;
+$hover-p-c: #05094b;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: $background-color;
+    font-family: $font;
+    overflow-x: hidden;
+
+    button{
+        cursor: pointer;
+    }
+
+    .under-line{
+        width: 100%;
+        height: 5px;
+        box-sizing: border-box;
+        background-color: $secondary-color;
+        transition: all .5s ease;
+    }
+    .sp{
+        margin-top: -75px;
+    }
+    .gsp{
+        //position: relative;
+        margin-top: -200px;
+    }
+}
+
+header{
+
+    .contact-info{
+        background-color: $primary-color;
+        padding: 10px;
+        
+        .contact-info-text{
+            text-align: center;
+
+            .tel-number, .email{
+                margin: 20px;
+                color: $white;
+                
+                svg{
+                    margin-right: 5px;
+                    width: 50px;
+                }
+                
+                &:hover{
+                    font-weight: bold;
+                    transition: all 1s ease-out;
+                }
+            }
+        }
+    }
+
+    .school-logo{
+        display: flex;
+
+        .logo-img{
+            margin: 25px 20px 50px 100px;
+            display: flex;
+            width: auto;
+
+            .logo{
+                width: 200px;
+            }
+        }
+        .logo-text{
+            margin: 80px 0 0 250px;
+
+            .school-name{
+                font-size: 3em;
+
+                a{
+                    color: $black;
+                    text-decoration: none;
+                }
+            }
+            .school-motto{
+                color: $primary-color;
+                font-size: 1.5em;
+            }          
+        }
+    }
+
+    .menu{
+        width: 100%;
+        box-sizing: border-box;
+        background-color: $primary-color;
+        height: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+        display: none;
+        color: $white;
+
+        button{
+            background-color: $primary-color;
+            border: none;
+            color: $white;
+
+            svg{
+                margin: 11px;
+                font-size: 24pt;
+            }
+        }
+    }
+
+    .nav-bar{
+        width: 100%;
+        box-sizing: border-box;
+        background-color: $primary-color;
+        height: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+        transition: transform .5s ease-out;
+        z-index: 999;
+
+                    
+        button{
+            background-color: $primary-color;
+            border: none;
+            color: $white;
+            float: right;
+            margin: 50px;
+            svg{
+                font-size: 24pt;
+                color: white;
+                display: none;
+            }
+        }
+
+        .primary-nav{
+
+    
+            ul{
+                display: flex;
+                padding-top: 15px;
+    
+                
+                .quick-links{
+                    margin-left: auto;
+                    margin-right: auto;
+                    list-style: none;
+                    font-weight: bolder;
+                    width: 150px;
+                    font-size: 1.2em;
+
+
+                    .current{
+                        font-size: 1.3em;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: $white;
+                        transition: all 1s ease-out;
+                        &:hover{
+                            letter-spacing: 0.1em;
+                        }
+                    }
+                    .select{
+                        margin-left: 20px;
+                    }
+
+                    div {
+                        
+                        select{
+                            margin-left: 0px;
+                            width: 150px;
+                            height: 30px;
+                            background-color: $primary-color;
+                            font-size: 1em;
+                            font-weight: bold;
+                            color: $white;
+                            border: $secondary-color 2px solid;
+                            border-radius: 5px;
+                            font-family: $font;
+                            
+                            option{
+                                font-family: $font;
+                                font-size: .8em;
+                                font-weight: bold;
+                                background-color: $primary-color;
+                            } 
+                        }   
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+.image-slider-section{
+    overflow: hidden;
+    width: 1000px;
+    height: 600px;
+    box-sizing: border-box;
+    margin: 0 auto 0 auto;
+    border-radius: 5px;
+
+    .slide-arrows{
+        display: flex;
+        position: relative;
+        top: 290px;
+        z-index: 999;
+        
+        .arrow-container{
+            width: 80px;
+            height: 50px;
+            background-color: $secondary-color;
+            border: none;
+            transition: all 1s ease-in;
+            
+            svg{
+                animation: move .5s ease-in-out infinite alternate;
+                font-size: 3em;
+                color: $white;
+            }
+        }
+        .right{
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            margin-left: auto;
+            
+            .fa-arrow-right{
+                margin-left: 20px;
+            }
+            &:hover{
+                border-top-left-radius: 75px;
+                border-bottom-left-radius: 75px;
+                background-color: $hover-s-c;
+    
+            }
+        }
+        .left{
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            margin-right: auto;
+            
+            .fa-arrow-left{
+                margin-left: 20px;
+            }
+            &:hover{
+                border-top-right-radius: 75px;
+                border-bottom-right-radius: 75px;
+                background-color: $hover-s-c;
+                transition: all 1s ease-in;
+
+            }
+            
+        }
+    }
+    .slides-container{
+        //display: flex;
+        .slide{
+            //transform: translateX(-100%); 
+            display: none;   
+            transition: all .2s;
+            margin-bottom: 0;
+            animation: fade 1s;
+            
+            .image{
+                border-radius: 5px;
+                width: 1000px;
+                height: 600px;
+            }
+            .image-desc{
+                position: relative;
+                top: -230px;
+                left: 50px;
+                width: 800px;
+                color: $white;
+                padding: 10px;
+                background-color: #4d4d4d70;
+            }
+        }
+        
+        .slide-active{
+            //transform: translateX(100%); 
+            display: block;   
+        }
+    }
+
+    .slide-shortcut-btn{
+        position: relative;
+        top: 500px;
+        text-align: center;
+        z-index: 999;
+
+
+        .move-to-slide{
+            border: none;
+            padding: 5px;
+            border-radius: 10px;
+            width: 10px;
+            height: 10px;
+            background-color: #ffffff77;
+        }
+        .active-move-to-slide{
+            background-color: $white;
+        }
+    }
+}
+
+
+.up-arrow{
+    text-align: right;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 99;
+
+    a{
+        background-color: $secondary-color;
+        padding: 13px;
+        border-radius: 10px;
+        border: 2px solid $primary-color;
+        color: $white;
+        transition: background-color .5s ease;
+
+        &:hover{
+            background-color: $hover-p-c;
+            border: 2px solid $secondary-color;
+        }
+    }
+}
+
+.about-section{
+    margin-top: 150px;
+    padding: 50px;
+
+    .about-text{
+        margin-bottom: 10px;
+
+        h1{
+            margin-bottom: 20px;
+            font-size: 30pt;
+            color: $black
+
+        }
+        p{
+            margin-top: 5px;
+            margin-bottom: 30px;
+            line-height: 20px;
+        }
+    }
+    a{
+        background-color: $secondary-color;
+        width: 70px;
+        height: 30px;
+        padding: 10px;
+        border: none;
+        border-radius: 15px;
+        color: $white;
+        text-decoration: none;
+        transition: all .5s ease;
+
+        &:hover{
+            background-color: $hover-s-c;
+        }
+    }
+}
+
+.school-academy-info{
+    background-color: $primary-color;
+    color: $white;
+    padding: 10px;
+    height: 50px;
+    overflow: hidden;
+    
+
+    .info-container{
+        .number-container{
+            .main-content{
+                display: grid;
+                //justify-content: space-around;
+                grid-template-columns: repeat(4, 250px);
+                grid-template-rows: repeat(1, 90px);
+                margin-top: 7px;
+                gap: 20px;
+                justify-content: center;
+
+                h1{
+                    font-size: 16pt;
+                }
+            }
+        }
+    }
+}
+
+.gallery-sec{
+    text-align: center;
+
+    h1{
+        font-size: 35pt;
+        margin: 20px;
+    }
+    .more-info{
+
+        overflow-x: hidden;
+        //display: flex;
+        display: grid;
+        gap: 15px;
+        grid-template-columns: repeat(4, 300px);
+        grid-template-rows: repeat(1, 300px);
+        place-content: center;
+        margin-bottom: 50px;
+
+        img{
+            width: 300px;
+            //margin: 5px;
+            border-radius: 50px;
+        }
+       
+    }
+
+    a{
+        background-color: $secondary-color;
+        width: 70px;
+        height: 30px;
+        padding: 10px;
+        border: none;
+        border-radius: 15px;
+        color: $white;
+        text-decoration: none;
+        transition: all .5s ease;
+        &:hover + .gsp{
+            background-color: $hover-s-c;
+        }
+        &:hover{
+            background-color: $hover-s-c;
+        }
+    }
+
+    .gsp{
+        margin-top: -7px;
+    }
+}
+
+.contact-sec{
+    margin-top: 50px;
+    margin-bottom: 25px;
+    text-align: center;
+
+    h1{
+        text-align: center;
+        font-size: 35pt;
+    }
+    .contact-input{
+        margin: 10px 20px 0px 20px;
+        width: auto;
+        height: auto;
+        border: 2px solid $primary-color;
+        border-radius: 50px;
+        padding: 25px;
+        line-height: 50px;
+        background-color: $white;
+
+        p{
+            width: auto;
+            font-size: 18pt;
+            
+            a{
+                width: auto;
+                color: $primary-color;
+                text-decoration: none;
+            }
+        }
+    }
+    .more-info-btn{
+        text-align: center;
+        background-color: $secondary-color;
+        width: 70px;
+        height: 30px;
+        padding: 10px;
+        border: 2px solid $primary-color;
+        border-radius: 15px;
+        color: $white;
+        text-decoration: none;
+        transition: all .5s ease;
+        margin-top: -20px;
+
+        &:hover{
+            background-color: $hover-s-c;
+        }
+    }
+}
+
+.event-section{
+    margin-top: 50px;
+    margin-bottom: 25px;
+    text-align: center;
+
+    h1{
+        text-align: center;
+        font-size: 35pt;
+    }
+
+    .event-container{
+        margin: 10px 20px 0px 20px;
+        width: auto;
+        height: auto;
+        border: 2px solid $primary-color;
+        border-radius: 50px;
+        padding: 25px;
+        background-color: $white;
+
+        h3{
+            text-align: center;
+        }
+
+        p{
+            font-size: 2em;
+            line-height: 50px;
+        }
+
+        .time{
+            color: $primary-color;
+
+        }
+
+    }
+
+    .more-info-btn{
+        text-align: center;
+        background-color: $secondary-color;
+        width: 70px;
+        height: 30px;
+        padding: 10px;
+        border: 2px solid $primary-color;
+        border-radius: 15px;
+        color: $white;
+        text-decoration: none;
+        transition: all .5s ease;
+        margin-top: -20px;
+
+        &:hover{
+            background-color: $hover-s-c;
+        }
+    }
+}
+
+footer{
+    margin-top: 60px;
+    display: grid;
+    background-color: $primary-color;
+    grid-template-columns: repeat(3, 250px);
+    grid-template-rows: repeat(1, 100px);
+    gap: 120px;
+    height: 250px;
+    color: $white;
+    justify-content: center;
+    padding-top: 60px;
+
+    .school-logo{
+        a{
+            img{
+                width: 200px;
+            }
+        }
+    }
+
+    .quick-links, .contact{
+        font-weight: bold;
+
+        ul {
+            margin-top: 10px;
+
+            li, p{
+                list-style: none;
+                line-height: 20px;
+            }
+        }
+        a{
+            color: $white;
+            text-decoration: none;
+            margin: 5px;
+        }
+    }
+
+
+}
+
+@keyframes move {
+    from{
+        margin-left: 20px;
+    }
+    to{
+        margin-left: 5px;
+    }
+}
+@keyframes fade {
+    from{
+        opacity: .2;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+::-webkit-scrollbar{
+    background-color: $primary-color;
+    border-left: 3px solid $white;
+    border-right: 2px solid $white;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: $secondary-color;
+    color: $white;
+}
+::-webkit-scrollbar-corner{
+    background-color: $white;
+    //border-left: 3px solid $white;
+}
+

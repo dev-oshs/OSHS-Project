@@ -1,0 +1,537 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "Trebuchet MS";
+  overflow-x: hidden;
+}
+body button {
+  cursor: pointer;
+}
+body .under-line {
+  width: 100%;
+  height: 5px;
+  box-sizing: border-box;
+  background-color: #ffcc00;
+  transition: all 0.5s ease;
+}
+body .sp {
+  margin-top: -75px;
+}
+body .gsp {
+  margin-top: -200px;
+}
+
+header .contact-info {
+  background-color: #141b80;
+  padding: 10px;
+}
+header .contact-info .contact-info-text {
+  text-align: center;
+}
+header .contact-info .contact-info-text .tel-number, header .contact-info .contact-info-text .email {
+  margin: 20px;
+  color: #ffffff;
+}
+header .contact-info .contact-info-text .tel-number svg, header .contact-info .contact-info-text .email svg {
+  margin-right: 5px;
+  width: 50px;
+}
+header .contact-info .contact-info-text .tel-number:hover, header .contact-info .contact-info-text .email:hover {
+  font-weight: bold;
+  transition: all 1s ease-out;
+}
+header .school-logo {
+  display: flex;
+}
+header .school-logo .logo-img {
+  margin: 25px 20px 50px 100px;
+  display: flex;
+  width: auto;
+}
+header .school-logo .logo-img .logo {
+  width: 200px;
+}
+header .school-logo .logo-text {
+  margin: 80px 0 0 250px;
+}
+header .school-logo .logo-text .school-name {
+  font-size: 3em;
+}
+header .school-logo .logo-text .school-name a {
+  color: #000000;
+  text-decoration: none;
+}
+header .school-logo .logo-text .school-motto {
+  color: #141b80;
+  font-size: 1.5em;
+}
+header .menu {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #141b80;
+  height: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: none;
+  color: #ffffff;
+}
+header .menu button {
+  background-color: #141b80;
+  border: none;
+  color: #ffffff;
+}
+header .menu button svg {
+  margin: 11px;
+  font-size: 24pt;
+}
+header .nav-bar {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #141b80;
+  height: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  transition: transform 0.5s ease-out;
+  z-index: 999;
+}
+header .nav-bar button {
+  background-color: #141b80;
+  border: none;
+  color: #ffffff;
+  float: right;
+  margin: 50px;
+}
+header .nav-bar button svg {
+  font-size: 24pt;
+  color: white;
+  display: none;
+}
+header .nav-bar .primary-nav ul {
+  display: flex;
+  padding-top: 15px;
+}
+header .nav-bar .primary-nav ul .quick-links {
+  margin-left: auto;
+  margin-right: auto;
+  list-style: none;
+  font-weight: bolder;
+  width: 150px;
+  font-size: 1.2em;
+}
+header .nav-bar .primary-nav ul .quick-links .current {
+  font-size: 1.3em;
+}
+header .nav-bar .primary-nav ul .quick-links a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: all 1s ease-out;
+}
+header .nav-bar .primary-nav ul .quick-links a:hover {
+  letter-spacing: 0.1em;
+}
+header .nav-bar .primary-nav ul .quick-links .select {
+  margin-left: 20px;
+}
+header .nav-bar .primary-nav ul .quick-links div select {
+  margin-left: 0px;
+  width: 150px;
+  height: 30px;
+  background-color: #141b80;
+  font-size: 1em;
+  font-weight: bold;
+  color: #ffffff;
+  border: #ffcc00 2px solid;
+  border-radius: 5px;
+  font-family: "Trebuchet MS";
+}
+header .nav-bar .primary-nav ul .quick-links div select option {
+  font-family: "Trebuchet MS";
+  font-size: 0.8em;
+  font-weight: bold;
+  background-color: #141b80;
+}
+
+.image-slider-section {
+  overflow: hidden;
+  width: 1000px;
+  height: 600px;
+  box-sizing: border-box;
+  margin: 0 auto 0 auto;
+  border-radius: 5px;
+}
+.image-slider-section .slide-arrows {
+  display: flex;
+  position: relative;
+  top: 290px;
+  z-index: 999;
+}
+.image-slider-section .slide-arrows .arrow-container {
+  width: 80px;
+  height: 50px;
+  background-color: #ffcc00;
+  border: none;
+  transition: all 1s ease-in;
+}
+.image-slider-section .slide-arrows .arrow-container svg {
+  -webkit-animation: move 0.5s ease-in-out infinite alternate;
+          animation: move 0.5s ease-in-out infinite alternate;
+  font-size: 3em;
+  color: #ffffff;
+}
+.image-slider-section .slide-arrows .right {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-left: auto;
+}
+.image-slider-section .slide-arrows .right .fa-arrow-right {
+  margin-left: 20px;
+}
+.image-slider-section .slide-arrows .right:hover {
+  border-top-left-radius: 75px;
+  border-bottom-left-radius: 75px;
+  background-color: #d1a804;
+}
+.image-slider-section .slide-arrows .left {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-right: auto;
+}
+.image-slider-section .slide-arrows .left .fa-arrow-left {
+  margin-left: 20px;
+}
+.image-slider-section .slide-arrows .left:hover {
+  border-top-right-radius: 75px;
+  border-bottom-right-radius: 75px;
+  background-color: #d1a804;
+  transition: all 1s ease-in;
+}
+.image-slider-section .slides-container .slide {
+  display: none;
+  transition: all 0.2s;
+  margin-bottom: 0;
+  -webkit-animation: fade 1s;
+          animation: fade 1s;
+}
+.image-slider-section .slides-container .slide .image {
+  border-radius: 5px;
+  width: 1000px;
+  height: 600px;
+}
+.image-slider-section .slides-container .slide .image-desc {
+  position: relative;
+  top: -230px;
+  left: 50px;
+  width: 800px;
+  color: #ffffff;
+  padding: 10px;
+  background-color: rgba(77, 77, 77, 0.4392156863);
+}
+.image-slider-section .slides-container .slide-active {
+  display: block;
+}
+.image-slider-section .slide-shortcut-btn {
+  position: relative;
+  top: 500px;
+  text-align: center;
+  z-index: 999;
+}
+.image-slider-section .slide-shortcut-btn .move-to-slide {
+  border: none;
+  padding: 5px;
+  border-radius: 10px;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.4666666667);
+}
+.image-slider-section .slide-shortcut-btn .active-move-to-slide {
+  background-color: #ffffff;
+}
+
+.up-arrow {
+  text-align: right;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 99;
+}
+.up-arrow a {
+  background-color: #ffcc00;
+  padding: 13px;
+  border-radius: 10px;
+  border: 2px solid #141b80;
+  color: #ffffff;
+  transition: background-color 0.5s ease;
+}
+.up-arrow a:hover {
+  background-color: #05094b;
+  border: 2px solid #ffcc00;
+}
+
+.about-section {
+  margin-top: 150px;
+  padding: 50px;
+}
+.about-section .about-text {
+  margin-bottom: 10px;
+}
+.about-section .about-text h1 {
+  margin-bottom: 20px;
+  font-size: 30pt;
+  color: #000000;
+}
+.about-section .about-text p {
+  margin-top: 5px;
+  margin-bottom: 30px;
+  line-height: 20px;
+}
+.about-section a {
+  background-color: #ffcc00;
+  width: 70px;
+  height: 30px;
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+.about-section a:hover {
+  background-color: #d1a804;
+}
+
+.school-academy-info {
+  background-color: #141b80;
+  color: #ffffff;
+  padding: 10px;
+  height: 50px;
+  overflow: hidden;
+}
+.school-academy-info .info-container .number-container .main-content {
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  grid-template-rows: repeat(1, 90px);
+  margin-top: 7px;
+  gap: 20px;
+  justify-content: center;
+}
+.school-academy-info .info-container .number-container .main-content h1 {
+  font-size: 16pt;
+}
+
+.gallery-sec {
+  text-align: center;
+}
+.gallery-sec h1 {
+  font-size: 35pt;
+  margin: 20px;
+}
+.gallery-sec .more-info {
+  overflow-x: hidden;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(4, 300px);
+  grid-template-rows: repeat(1, 300px);
+  place-content: center;
+  margin-bottom: 50px;
+}
+.gallery-sec .more-info img {
+  width: 300px;
+  border-radius: 50px;
+}
+.gallery-sec a {
+  background-color: #ffcc00;
+  width: 70px;
+  height: 30px;
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+.gallery-sec a:hover + .gsp {
+  background-color: #d1a804;
+}
+.gallery-sec a:hover {
+  background-color: #d1a804;
+}
+.gallery-sec .gsp {
+  margin-top: -7px;
+}
+
+.contact-sec {
+  margin-top: 50px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+.contact-sec h1 {
+  text-align: center;
+  font-size: 35pt;
+}
+.contact-sec .contact-input {
+  margin: 10px 20px 0px 20px;
+  width: auto;
+  height: auto;
+  border: 2px solid #141b80;
+  border-radius: 50px;
+  padding: 25px;
+  line-height: 50px;
+  background-color: #ffffff;
+}
+.contact-sec .contact-input p {
+  width: auto;
+  font-size: 18pt;
+}
+.contact-sec .contact-input p a {
+  width: auto;
+  color: #141b80;
+  text-decoration: none;
+}
+.contact-sec .more-info-btn {
+  text-align: center;
+  background-color: #ffcc00;
+  width: 70px;
+  height: 30px;
+  padding: 10px;
+  border: 2px solid #141b80;
+  border-radius: 15px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  margin-top: -20px;
+}
+.contact-sec .more-info-btn:hover {
+  background-color: #d1a804;
+}
+
+.event-section {
+  margin-top: 50px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+.event-section h1 {
+  text-align: center;
+  font-size: 35pt;
+}
+.event-section .event-container {
+  margin: 10px 20px 0px 20px;
+  width: auto;
+  height: auto;
+  border: 2px solid #141b80;
+  border-radius: 50px;
+  padding: 25px;
+  background-color: #ffffff;
+}
+.event-section .event-container h3 {
+  text-align: center;
+}
+.event-section .event-container p {
+  font-size: 2em;
+  line-height: 50px;
+}
+.event-section .event-container .time {
+  color: #141b80;
+}
+.event-section .more-info-btn {
+  text-align: center;
+  background-color: #ffcc00;
+  width: 70px;
+  height: 30px;
+  padding: 10px;
+  border: 2px solid #141b80;
+  border-radius: 15px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  margin-top: -20px;
+}
+.event-section .more-info-btn:hover {
+  background-color: #d1a804;
+}
+
+footer {
+  margin-top: 60px;
+  display: grid;
+  background-color: #141b80;
+  grid-template-columns: repeat(3, 250px);
+  grid-template-rows: repeat(1, 100px);
+  gap: 120px;
+  height: 250px;
+  color: #ffffff;
+  justify-content: center;
+  padding-top: 60px;
+}
+footer .school-logo a img {
+  width: 200px;
+}
+footer .quick-links, footer .contact {
+  font-weight: bold;
+}
+footer .quick-links ul, footer .contact ul {
+  margin-top: 10px;
+}
+footer .quick-links ul li, footer .quick-links ul p, footer .contact ul li, footer .contact ul p {
+  list-style: none;
+  line-height: 20px;
+}
+footer .quick-links a, footer .contact a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 5px;
+}
+
+@-webkit-keyframes move {
+  from {
+    margin-left: 20px;
+  }
+  to {
+    margin-left: 5px;
+  }
+}
+
+@keyframes move {
+  from {
+    margin-left: 20px;
+  }
+  to {
+    margin-left: 5px;
+  }
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+::-webkit-scrollbar {
+  background-color: #141b80;
+  border-left: 3px solid #ffffff;
+  border-right: 2px solid #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffcc00;
+  color: #ffffff;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: #ffffff;
+}/*# sourceMappingURL=style.css.map */

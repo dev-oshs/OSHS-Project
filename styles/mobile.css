@@ -2,7 +2,7 @@
   .image-slider-section {
     width: 100%;
   }
-  .image-slider-section .slide-container .slide .image {
+  .image-slider-section .slides-container .slide .image {
     width: 100%;
     height: auto;
   }
@@ -91,5 +91,8 @@
   .school-academy-info .info-container .number-container .main-content {
     grid-template-columns: repeat(1, auto);
     grid-template-rows: repeat(4, 90px);
+  }
+  .image-slider-section .slides-container .slide .image-desc p {
+    display: none;
   }
 }/*# sourceMappingURL=mobile.css.map */

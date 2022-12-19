@@ -1,12 +1,13 @@
 @media all and (max-width: 1020px) {
     .image-slider-section{
         width: 100%;
-        .slide-container{
+        .slides-container{
             .slide{
                 .image{
                     width: 100%;
                     height: auto;
                 }
+
             }
         }
     }
@@ -143,5 +144,17 @@
 
         }
 
+    }
+
+    .image-slider-section{
+        .slides-container{
+            .slide{
+                .image-desc{
+                    p{
+                        display: none;
+                    }
+                }
+            }
+        }
     }
 }

@@ -74,13 +74,13 @@ header .school-logo .logo-text .school-motto {
   font-size: 1.5em;
 }
 header .menu {
+  display: none;
   width: 100%;
   box-sizing: border-box;
   background-color: #141b80;
   height: 50px;
   padding-left: 50px;
   padding-right: 50px;
-  display: none;
   color: #ffffff;
 }
 header .menu button {
@@ -376,9 +376,13 @@ header .nav-bar .primary-nav ul .quick-links div select option {
   text-align: center;
   font-size: 35pt;
 }
-.contact-sec .contact-input {
-  margin: 10px 20px 0px 20px;
+.contact-sec p {
   width: auto;
+  font-size: 18pt;
+}
+.contact-sec .contact-info {
+  margin: 10px auto 0px auto;
+  width: 600px;
   height: auto;
   border: 2px solid #141b80;
   border-radius: 50px;
@@ -386,14 +390,12 @@ header .nav-bar .primary-nav ul .quick-links div select option {
   line-height: 50px;
   background-color: #ffffff;
 }
-.contact-sec .contact-input p {
+.contact-sec .contact-info .info {
   width: auto;
-  font-size: 18pt;
 }
-.contact-sec .contact-input p a {
-  width: auto;
-  color: #141b80;
-  text-decoration: none;
+.contact-sec .contact-info .info a {
+  font-size: 18pt;
+  color: #000000;
 }
 .contact-sec .more-info-btn {
   text-align: center;
@@ -422,8 +424,8 @@ header .nav-bar .primary-nav ul .quick-links div select option {
   font-size: 35pt;
 }
 .event-section .event-container {
-  margin: 10px 20px 0px 20px;
-  width: auto;
+  margin: 10px auto 0px auto;
+  width: 600px;
   height: auto;
   border: 2px solid #141b80;
   border-radius: 50px;

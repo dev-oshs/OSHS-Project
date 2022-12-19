@@ -59,7 +59,7 @@
     margin-top: 20px;
   }
   header .nav-opened {
-    transform: translateX(0%);
+    transform: translateY(-4%);
     transition: transform 0.5s ease-in;
   }
   header .school-logo {
@@ -91,5 +91,15 @@
   .school-academy-info .info-container .number-container .main-content {
     grid-template-columns: repeat(1, auto);
     grid-template-rows: repeat(4, 90px);
+  }
+  .contact-sec .contact-info, .contact-sec .event-container, .event-section .contact-info, .event-section .event-container {
+    padding: 10px 0;
+    margin: 10px 10px 0px 10px;
+    width: auto;
+  }
+  .contact-sec .contact-info .info a, .contact-sec .event-container .info a, .event-section .contact-info .info a, .event-section .event-container .info a {
+    font-size: 13pt;
+    font-weight: bold;
+    line-break: anywhere;
   }
 }/*# sourceMappingURL=mobile.css.map */

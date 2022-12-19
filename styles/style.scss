@@ -98,13 +98,13 @@ header{
     }
 
     .menu{
+        display: none;
         width: 100%;
         box-sizing: border-box;
         background-color: $primary-color;
         height: 50px;
         padding-left: 50px;
         padding-right: 50px;
-        display: none;
         color: $white;
 
         button{
@@ -460,9 +460,14 @@ header{
         text-align: center;
         font-size: 35pt;
     }
-    .contact-input{
-        margin: 10px 20px 0px 20px;
+    
+    p{
         width: auto;
+        font-size: 18pt;
+    }
+    .contact-info{
+        margin: 10px auto 0px auto;
+        width: 600px;
         height: auto;
         border: 2px solid $primary-color;
         border-radius: 50px;
@@ -470,14 +475,13 @@ header{
         line-height: 50px;
         background-color: $white;
 
-        p{
+
+        .info{
             width: auto;
-            font-size: 18pt;
-            
+
             a{
-                width: auto;
-                color: $primary-color;
-                text-decoration: none;
+                font-size: 18pt;
+                color: $black;
             }
         }
     }
@@ -511,8 +515,8 @@ header{
     }
 
     .event-container{
-        margin: 10px 20px 0px 20px;
-        width: auto;
+        margin: 10px auto 0px auto;
+        width: 600px;
         height: auto;
         border: 2px solid $primary-color;
         border-radius: 50px;

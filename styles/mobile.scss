@@ -87,7 +87,7 @@
             }
         }
         .nav-opened{
-            transform: translateX(0%);
+            transform: translateY(-4%);
             transition: transform .5s ease-in;
         }
         .school-logo{
@@ -143,5 +143,20 @@
 
         }
 
+    }
+    .contact-sec, .event-section{
+        .contact-info, .event-container{
+            padding: 10px 0;
+            margin: 10px 10px 0px 10px;
+            width: auto;
+
+            .info{
+                a{
+                    font-size: 13pt;
+                    font-weight: bold;
+                    line-break: anywhere;
+                }
+            }
+        }
     }
 }

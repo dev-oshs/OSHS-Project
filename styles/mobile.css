@@ -29,64 +29,9 @@
     grid-template-rows: repeat(2, 200px);
   }
 }
-@media all and (max-width: 742px) {
-  header {
-    overflow: hidden;
-  }
-  header .menu {
-    display: flex;
-    justify-content: space-between;
-  }
-  header .nav-bar {
-    transform: translateY(-100%);
-    width: 300px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    z-index: 999;
-  }
-  header .nav-bar button svg {
-    display: block;
-  }
-  header .nav-bar .primary-nav {
-    margin-top: 70px;
-  }
-  header .nav-bar .primary-nav ul {
-    flex-direction: column;
-  }
-  header .nav-bar .primary-nav ul .quick-links {
-    margin-top: 20px;
-  }
-  header .nav-opened {
-    transform: translateY(-4%);
-    transition: transform 0.5s ease-in;
-  }
-  header .school-logo {
-    flex-direction: column;
-  }
-  header .school-logo .logo-img {
-    margin: 25px auto 0 auto;
-  }
-  header .school-logo .logo-img .logo {
-    width: 200px;
-  }
-  header .school-logo .logo-text {
-    margin: 10px auto 20px auto;
-    text-align: center;
-  }
-  header .school-logo .logo-text .school-name {
-    font-size: 2em;
-  }
-}
 @media screen and (max-width: 647px) {
   .gallery-sec .more-info {
     grid-template-columns: repeat(1, 300px);
-  }
-  footer {
-    grid-template-columns: repeat(1, 280px);
-    grid-template-rows: repeat(3, 100px);
-    gap: 150px;
   }
   .school-academy-info .info-container .number-container .main-content {
     grid-template-columns: repeat(1, auto);

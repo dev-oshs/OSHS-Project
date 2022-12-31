@@ -1,0 +1,365 @@
+$primary-color : #141b80;
+$secondary-color: #ffcc00;
+$background-color: #ffffff;
+$white: #ffffff;
+$black: #000000;
+$font: "Trebuchet MS";
+$hover-s-c: #d1a804;
+$hover-p-c: #05094b;
+
+header{
+    
+    .contact-info{
+        background-color: $primary-color;
+        padding: 10px;
+        
+        .contact-info-text{
+            text-align: center;
+
+            .tel-number, .email{
+                margin: 20px;
+                color: $white;
+                
+                svg{
+                    margin-right: 5px;
+                    width: 50px;
+                }
+                
+                &:hover{
+                    font-weight: bold;
+                    transition: all 1s ease-out;
+                }
+            }
+        }
+    }
+
+    .school-logo{
+        display: flex;
+
+        .logo-img{
+            margin: 25px 20px 50px 100px;
+            display: flex;
+            width: auto;
+
+            .logo{
+                width: 200px;
+            }
+        }
+        .logo-text{
+            margin: 80px 0 0 250px;
+
+            .school-name{
+                font-size: 3em;
+
+                a{
+                    color: $black;
+                    text-decoration: none;
+                }
+            }
+            .school-motto{
+                color: $primary-color;
+                font-size: 1.5em;
+            }          
+        }
+    }
+
+    .menu{
+        display: none;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: $primary-color;
+        height: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+        color: $white;
+
+        button{
+            background-color: $primary-color;
+            border: none;
+            color: $white;
+
+            svg{
+                margin: 11px;
+                font-size: 24pt;
+            }
+        }
+    }
+
+    .nav-bar{
+        width: 100%;
+        box-sizing: border-box;
+        background-color: $primary-color;
+        height: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+        transition: transform .5s ease-out;
+        z-index: 999;
+
+                    
+        #close-nav-btn{
+            background-color: $primary-color;
+            border: none;
+            color: $white;
+            float: right;
+            svg{
+                font-size: 24pt;
+                color: white;
+                display: none;
+            }
+        }
+
+        .primary-nav{
+
+    
+            ul{
+                display: flex;
+                padding-top: 15px;
+    
+                
+                .quick-links{
+                    margin-left: auto;
+                    margin-right: auto;
+                    list-style: none;
+                    font-weight: bolder;
+                    width: 150px;
+                    font-size: 1.2em;
+
+
+                    .current{
+                        font-size: 1.3em;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: $white;
+                        transition: all 1s ease-out;
+                        &:hover{
+                            letter-spacing: 0.1em;
+                        }
+                    }
+                    
+                    div {
+                        
+                        .select{
+                            margin-left: 20px;
+                            z-index: 999;
+                            position: relative;
+                            top: -8px;
+                        }
+                        .drop-down{
+                            width: 150px;
+                            background-color: $primary-color;
+                            overflow: hidden;
+                            padding-bottom: 0;
+                            height: 35px;
+                            transition: all 1s ease-in-out;
+                            border: none;
+
+
+                            .option{
+                                text-decoration: none;
+                                color: $white;
+                                font-weight: bold;
+                                font-size: 1.2em;
+                                transition: all 1s ease-out;
+
+                                & > svg{
+                                    margin-left: 10px;
+                                }
+                            }
+
+                            .default{
+                                width: 150px;
+                                position: relative;
+                                top: 0;
+                                background-color: $primary-color;
+                                z-index: 999;
+                                padding-top: 7px;
+                            }
+                            .drop-down-list{
+                                transition: all 1s ease-in-out;
+                                transform: translateY(-140%);
+
+
+                            }
+
+                            
+                            .list-open{
+                                transform: translateY(0%);
+                                padding-top: 20px;
+                                margin-bottom: 20px;
+                            }
+                             
+                        }
+                        .active{
+                            padding-bottom: 85px;
+                        }
+
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 742px) {
+    header{
+        overflow: hidden;
+
+        .menu{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .nav-bar{
+            transform: translateY(-100%);
+            width: 300px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100vh;
+            z-index: 999;
+
+            button, #close-nav-btn{
+                svg{
+                    display: block;
+                }
+            }
+
+            #close-nav-btn{
+                position: relative;
+                top: 90px;
+            }
+
+            .primary-nav{
+                margin-top: 70px;
+
+                ul{
+                    flex-direction: column;
+
+                    .quick-links{
+                        margin-top: 20px;
+
+                        div{
+                            .drop-down{
+                                width: 250px;
+
+                                .default{
+                                    width: 250px;
+                                    padding-top: 0;
+                                }
+
+                                .option{
+                                    margin-left: -95px;
+                                    & > svg{
+
+                                        margin-left: auto;
+                                        top: -20px;
+                                        position: relative;
+                                    }
+                                }
+
+                                .list-open{
+                                    padding-top: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .nav-opened{
+            transform: translateY(-4%);
+            transition: transform .5s ease-in;
+        }
+        .school-logo{
+            flex-direction: column;
+
+            .logo-img{
+                margin: 25px auto 0 auto;
+
+                .logo{
+                    width: 200px;
+                }
+            }
+
+            .logo-text{
+                margin: 10px auto 20px auto;
+                
+                text-align: center;
+                
+                .school-name{
+                    font-size: 2em;
+                }
+            }
+        }
+    }
+    
+
+
+}
+
+footer{
+    margin-top: 60px;
+    display: grid;
+    background-color: $primary-color;
+    grid-template-columns: repeat(3, 250px);
+    grid-template-rows: repeat(1, 100px);
+    gap: 120px;
+    height: 250px;
+    color: $white;
+    justify-content: center;
+    padding-top: 60px;
+
+    .school-logo{
+        a{
+            img{
+                width: 200px;
+            }
+        }
+    }
+
+    .quick-links, .contact{
+        font-weight: bold;
+
+        ul {
+            margin-top: 10px;
+
+            li, p{
+                list-style: none;
+                line-height: 20px;
+            }
+        }
+        a{
+            color: $white;
+            text-decoration: none;
+            margin: 5px;
+        }
+    }
+
+
+}
+
+
+
+
+
+
+
+@media all and (max-width: 1020px) {
+    footer{
+        grid-template-columns: repeat(2, 250px);
+        grid-template-rows: repeat(2, 100px);
+        height: auto;
+
+    }
+}
+
+@media screen and (max-width: 647px) {
+    footer{
+        grid-template-columns: repeat(1, 280px);
+        grid-template-rows: repeat(3, 100px);
+        gap: 150px; 
+        height: auto; 
+    }
+}

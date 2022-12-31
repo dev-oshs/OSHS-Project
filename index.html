@@ -4,9 +4,12 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+        <link rel="stylesheet" href="./styles/style.css">
         <link rel="stylesheet" href="./styles/style.css">
         <link rel="stylesheet" href="./styles/mobile.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="shortcut icon" href="./assets/images/ojo_senior_high_logo.png" type="image/x-icon">
         <!-- <link rel="stylesheet" href="../fontawesome-free-6.1.2-web/css/all.css"> -->
         <title>Ojo Senior High School</title>
     </head>
@@ -22,7 +25,7 @@
             <div class="school-logo">
                 <div class="logo-img">
                     <a href="./">
-                        <img src="./images/ojo_senior_high_logo.png" alt="Ojo Senior High School logo" class="logo">
+                        <img src="./assets/images/ojo_senior_high_logo.png" alt="Ojo Senior High School logo" class="logo">
                     </a>
                 </div>
                 <div class="logo-text">
@@ -46,11 +49,13 @@
                         <li class="quick-links"><a href="#">Events</a></li>
                         <li class="quick-links select">
                             <div>
-                                <select name="" id="corner-select-menu">
-                                    <option value="null">Corner</option>
-                                    <option value="student-corner">Student's Corner</option>
-                                    <option value="teacher-corner">Teacher's Corner</option>
-                                </select>
+                                <button class="drop-down">
+                                    <div class="option default">Corner <i class="fa fa-arrow-down" aria-hidden="true"></i></div>
+                                    <div class="drop-down-list">
+                                        <div class="option"><a href="#">Student Corner</a></div>
+                                        <div class="option"><a href="#">Teacher Corner</a></div>
+                                    </div>
+                                </button>
                             </div>
                         </li>
                     </ul>
@@ -82,7 +87,7 @@
 
                     <div class="slide slide-active" >
                         <div class="slider-image">
-                            <img src="./images/slider_images/image1.jpg" alt="ojo senior high school slider image" class="image">
+                            <img src="./assets/images/slider_images/image1.jpg" alt="ojo senior high school slider image" class="image">
                         </div>
                         <div class="image-desc">
                             <h1 class="heading-image-desc">Lorem ipsum dolor sit amet</h1>
@@ -94,7 +99,7 @@
 
                     <div class="slide">
                         <div class="slider-image">
-                            <img src="./images/slider_images/image2.jpg" alt="ojo senior high school slider image" class="image">
+                            <img src="./assets/images/slider_images/image2.jpg" alt="ojo senior high school slider image" class="image">
                         </div>
                         <div class="image-desc">
                             <h1 class="heading-image-desc">Lorem ipsum dolor sit amet</h1>
@@ -105,7 +110,7 @@
                     </div>
                     <div class="slide">
                         <div class="slider-image">
-                            <img src="./images/slider_images/image3.jpg" alt="ojo senior high school slider image" class="image">
+                            <img src="./assets/images/slider_images/image3.jpg" alt="ojo senior high school slider image" class="image">
                         </div>
                         <div class="image-desc">
                             <h1 class="heading-image-desc">Lorem ipsum dolor sit amet</h1>
@@ -116,7 +121,7 @@
                     </div>
                     <div class="slide">
                         <div class="slider-image">
-                            <img src="./images/slider_images/image4.jpg" alt="ojo senior high school slider image" class="image">
+                            <img src="./assets/images/slider_images/image4.jpg" alt="ojo senior high school slider image" class="image">
                         </div>
                         <div class="image-desc">
                             <h1 class="heading-image-desc">Lorem ipsum dolor sit amet</h1>
@@ -127,7 +132,7 @@
                     </div>
                     <div class="slide">
                         <div class="slider-image">
-                            <img src="./images/slider_images/image5.jpg" alt="ojo senior high school slider image" class="image">
+                            <img src="./assets/images/slider_images/image5.jpg" alt="ojo senior high school slider image" class="image">
                         </div>
                         <div class="image-desc">
                             <h1 class="heading-image-desc">Lorem ipsum dolor sit amet</h1>
@@ -173,10 +178,10 @@
             <section class="gallery-sec">
                 <h1>Gallery</h1>
                 <div class="more-info">
-                    <img src="./images/slider_images/image3.jpg" alt="gallery image">
-                    <img src="./images/slider_images/image2.jpg" alt="gallery image">
-                    <img src="./images/slider_images/image5.jpg" alt="gallery image">
-                    <img src="./images/slider_images/image1.jpg" alt="gallery image">
+                    <img src="./assets/images/slider_images/image3.jpg" alt="gallery image">
+                    <img src="./assets/images/slider_images/image2.jpg" alt="gallery image">
+                    <img src="./assets/images/slider_images/image5.jpg" alt="gallery image">
+                    <img src="./assets/images/slider_images/image1.jpg" alt="gallery image">
                 </div>
 
                 <a href="#">View gallery</a>
@@ -217,7 +222,7 @@
         <footer>
             <div class="school-logo">
                 <a href="#">
-                    <img src="./images/ojo_senior_high_logo.png" alt="Ojo senior high school logo">
+                    <img src="./assets/images/ojo_senior_high_logo.png" alt="Ojo senior high school logo">
                 </a>
             </div>
             <div class="quick-links">
@@ -244,6 +249,7 @@
         </footer>
         <div class="under-line"></div>
         <script src="./scripts/script.js"></script>
+        <script src="./assets/js/navbar.js"></script>
         <!-- <script src="../fontawesome-free-6.1.2-web/js/all.js" defer></script> -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     </body>

@@ -1,0 +1,143 @@
+$primary-color : #141b80;
+$secondary-color: #ffcc00;
+$background-color: #ffffff;
+$white: #ffffff;
+$black: #000000;
+$font: "Trebuchet MS";
+$hover-s-c: #d1a804;
+$hover-p-c: #05094b;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: $background-color;
+    font-family: $font;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+    
+    .wrapper{
+        background-color: $background-color;
+        width: 400px;
+        margin-bottom: 5vh;
+        //border: $black 1px solid;
+        box-shadow: 0px 0px 2px 2px $black;
+        padding: 20px;
+
+        .school-info{
+            text-align: center;
+
+            .school-logo{
+                img{
+                    width: 150px;
+                }
+            }
+
+            .school-name-info{
+                .school-name, .info{
+                    margin: 1px;
+                }
+            }
+
+            .note{
+                padding: 50px;
+            }
+        }
+
+        .form-container{
+            padding: 10px;
+
+            .form{
+                display: grid;
+                gap: 10px;
+                //grid-template-columns: 200px 200px 200px;
+
+                label{
+                    font-size: 13pt;
+                    font-weight: bold;
+                    color: #525252;
+                }
+
+                input{
+                    height: 25px;
+                    padding: 10px;
+                    font-size: 14pt;
+                    padding: 10px;
+                    font-size: 14pt;
+                    
+                    &:nth-of-type(4){
+                        text-transform: uppercase;
+                    }
+                }
+                
+                select{
+                    height: 50px;
+                    padding: 10px;
+                    font-size: 14pt;
+                    padding: 10px;
+                }
+            }
+        }
+
+        .register-btn{
+            text-align: right;
+            padding: 10px;
+
+            #submit{
+                background-color: $primary-color;
+                border-radius: 5px;
+                padding: 10px;
+                color: $white;
+                border: 2.5px solid $hover-s-c;
+                transition: all .5s ease;
+
+                
+                &:hover{
+                    background-color: $hover-p-c;
+                    border: 2.5px solid $secondary-color;
+                }
+            }
+        }
+
+        .account{
+            margin-left: 10px;
+
+            p{
+                a{
+                    color: $black;
+                }
+            }
+        }
+
+    }
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    text-align: center;
+
+    p{
+        margin: 10px;
+    }
+}
+::-webkit-scrollbar{
+    background-color: $primary-color;
+    border-left: 3px solid $white;
+    border-right: 2px solid $white;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: $secondary-color;
+    color: $white;
+}
+::-webkit-scrollbar-corner{
+    background-color: $white;
+    //border-left: 3px solid $white;
+}

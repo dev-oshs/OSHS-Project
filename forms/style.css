@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "Trebuchet MS";
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
+}
+main .wrapper {
+  background-color: #ffffff;
+  width: 400px;
+  margin-bottom: 5vh;
+  box-shadow: 0px 0px 2px 2px #000000;
+  padding: 20px;
+}
+main .wrapper .school-info {
+  text-align: center;
+}
+main .wrapper .school-info .school-logo img {
+  width: 150px;
+}
+main .wrapper .school-info .school-name-info .school-name, main .wrapper .school-info .school-name-info .info {
+  margin: 1px;
+}
+main .wrapper .school-info .note {
+  padding: 50px;
+}
+main .wrapper .form-container {
+  padding: 10px;
+}
+main .wrapper .form-container .form {
+  display: grid;
+  gap: 10px;
+}
+main .wrapper .form-container .form label {
+  font-size: 13pt;
+  font-weight: bold;
+  color: #525252;
+}
+main .wrapper .form-container .form input {
+  height: 25px;
+  padding: 10px;
+  font-size: 14pt;
+  padding: 10px;
+  font-size: 14pt;
+}
+main .wrapper .form-container .form input:nth-of-type(4) {
+  text-transform: uppercase;
+}
+main .wrapper .form-container .form select {
+  height: 50px;
+  padding: 10px;
+  font-size: 14pt;
+  padding: 10px;
+}
+main .wrapper .register-btn {
+  text-align: right;
+  padding: 10px;
+}
+main .wrapper .register-btn #submit {
+  background-color: #141b80;
+  border-radius: 5px;
+  padding: 10px;
+  color: #ffffff;
+  border: 2.5px solid #d1a804;
+  transition: all 0.5s ease;
+}
+main .wrapper .register-btn #submit:hover {
+  background-color: #05094b;
+  border: 2.5px solid #ffcc00;
+}
+main .wrapper .account {
+  margin-left: 10px;
+}
+main .wrapper .account p a {
+  color: #000000;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  text-align: center;
+}
+footer p {
+  margin: 10px;
+}
+
+::-webkit-scrollbar {
+  background-color: #141b80;
+  border-left: 3px solid #ffffff;
+  border-right: 2px solid #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffcc00;
+  color: #ffffff;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: #ffffff;
+}/*# sourceMappingURL=style.css.map */

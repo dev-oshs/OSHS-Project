@@ -1,0 +1,271 @@
+header .contact-info {
+  background-color: #141b80;
+  padding: 10px;
+}
+header .contact-info .contact-info-text {
+  text-align: center;
+}
+header .contact-info .contact-info-text .tel-number, header .contact-info .contact-info-text .email {
+  margin: 20px;
+  color: #ffffff;
+}
+header .contact-info .contact-info-text .tel-number svg, header .contact-info .contact-info-text .email svg {
+  margin-right: 5px;
+  width: 50px;
+}
+header .contact-info .contact-info-text .tel-number:hover, header .contact-info .contact-info-text .email:hover {
+  font-weight: bold;
+  transition: all 1s ease-out;
+}
+header .school-logo {
+  display: flex;
+}
+header .school-logo .logo-img {
+  margin: 25px 20px 50px 100px;
+  display: flex;
+  width: auto;
+}
+header .school-logo .logo-img .logo {
+  width: 200px;
+}
+header .school-logo .logo-text {
+  margin: 80px 0 0 250px;
+}
+header .school-logo .logo-text .school-name {
+  font-size: 3em;
+}
+header .school-logo .logo-text .school-name a {
+  color: #000000;
+  text-decoration: none;
+}
+header .school-logo .logo-text .school-motto {
+  color: #141b80;
+  font-size: 1.5em;
+}
+header .menu {
+  display: none;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #141b80;
+  height: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: #ffffff;
+}
+header .menu button {
+  background-color: #141b80;
+  border: none;
+  color: #ffffff;
+}
+header .menu button svg {
+  margin: 11px;
+  font-size: 24pt;
+}
+header .nav-bar {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #141b80;
+  height: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  transition: transform 0.5s ease-out;
+  z-index: 999;
+}
+header .nav-bar #close-nav-btn {
+  background-color: #141b80;
+  border: none;
+  color: #ffffff;
+  float: right;
+}
+header .nav-bar #close-nav-btn svg {
+  font-size: 24pt;
+  color: white;
+  display: none;
+}
+header .nav-bar .primary-nav ul {
+  display: flex;
+  padding-top: 15px;
+}
+header .nav-bar .primary-nav ul .quick-links {
+  margin-left: auto;
+  margin-right: auto;
+  list-style: none;
+  font-weight: bolder;
+  width: 150px;
+  font-size: 1.2em;
+}
+header .nav-bar .primary-nav ul .quick-links .current {
+  font-size: 1.3em;
+}
+header .nav-bar .primary-nav ul .quick-links a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: all 1s ease-out;
+}
+header .nav-bar .primary-nav ul .quick-links a:hover {
+  letter-spacing: 0.1em;
+}
+header .nav-bar .primary-nav ul .quick-links div .select {
+  margin-left: 20px;
+  z-index: 999;
+  position: relative;
+  top: -8px;
+}
+header .nav-bar .primary-nav ul .quick-links div .drop-down {
+  width: 150px;
+  background-color: #141b80;
+  overflow: hidden;
+  padding-bottom: 0;
+  height: 35px;
+  transition: all 1s ease-in-out;
+  border: none;
+}
+header .nav-bar .primary-nav ul .quick-links div .drop-down .option {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.2em;
+  transition: all 1s ease-out;
+}
+header .nav-bar .primary-nav ul .quick-links div .drop-down .option > svg {
+  margin-left: 10px;
+}
+header .nav-bar .primary-nav ul .quick-links div .drop-down .default {
+  width: 150px;
+  position: relative;
+  top: 0;
+  background-color: #141b80;
+  z-index: 999;
+  padding-top: 7px;
+}
+header .nav-bar .primary-nav ul .quick-links div .drop-down .drop-down-list {
+  transition: all 1s ease-in-out;
+  transform: translateY(-140%);
+}
+header .nav-bar .primary-nav ul .quick-links div .drop-down .list-open {
+  transform: translateY(0%);
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+header .nav-bar .primary-nav ul .quick-links div .active {
+  padding-bottom: 85px;
+}
+
+@media all and (max-width: 742px) {
+  header {
+    overflow: hidden;
+  }
+  header .menu {
+    display: flex;
+    justify-content: space-between;
+  }
+  header .nav-bar {
+    transform: translateY(-100%);
+    width: 300px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 999;
+  }
+  header .nav-bar button svg, header .nav-bar #close-nav-btn svg {
+    display: block;
+  }
+  header .nav-bar #close-nav-btn {
+    position: relative;
+    top: 90px;
+  }
+  header .nav-bar .primary-nav {
+    margin-top: 70px;
+  }
+  header .nav-bar .primary-nav ul {
+    flex-direction: column;
+  }
+  header .nav-bar .primary-nav ul .quick-links {
+    margin-top: 20px;
+  }
+  header .nav-bar .primary-nav ul .quick-links div .drop-down {
+    width: 250px;
+  }
+  header .nav-bar .primary-nav ul .quick-links div .drop-down .default {
+    width: 250px;
+    padding-top: 0;
+  }
+  header .nav-bar .primary-nav ul .quick-links div .drop-down .option {
+    margin-left: -95px;
+  }
+  header .nav-bar .primary-nav ul .quick-links div .drop-down .option > svg {
+    margin-left: auto;
+    top: -20px;
+    position: relative;
+  }
+  header .nav-bar .primary-nav ul .quick-links div .drop-down .list-open {
+    padding-top: 10px;
+  }
+  header .nav-opened {
+    transform: translateY(-4%);
+    transition: transform 0.5s ease-in;
+  }
+  header .school-logo {
+    flex-direction: column;
+  }
+  header .school-logo .logo-img {
+    margin: 25px auto 0 auto;
+  }
+  header .school-logo .logo-img .logo {
+    width: 200px;
+  }
+  header .school-logo .logo-text {
+    margin: 10px auto 20px auto;
+    text-align: center;
+  }
+  header .school-logo .logo-text .school-name {
+    font-size: 2em;
+  }
+}
+footer {
+  margin-top: 60px;
+  display: grid;
+  background-color: #141b80;
+  grid-template-columns: repeat(3, 250px);
+  grid-template-rows: repeat(1, 100px);
+  gap: 120px;
+  height: 250px;
+  color: #ffffff;
+  justify-content: center;
+  padding-top: 60px;
+}
+footer .school-logo a img {
+  width: 200px;
+}
+footer .quick-links, footer .contact {
+  font-weight: bold;
+}
+footer .quick-links ul, footer .contact ul {
+  margin-top: 10px;
+}
+footer .quick-links ul li, footer .quick-links ul p, footer .contact ul li, footer .contact ul p {
+  list-style: none;
+  line-height: 20px;
+}
+footer .quick-links a, footer .contact a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 5px;
+}
+
+@media all and (max-width: 1020px) {
+  footer {
+    grid-template-columns: repeat(2, 250px);
+    grid-template-rows: repeat(2, 100px);
+    height: auto;
+  }
+}
+@media screen and (max-width: 647px) {
+  footer {
+    grid-template-columns: repeat(1, 280px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 150px;
+    height: auto;
+  }
+}/*# sourceMappingURL=style.css.map */

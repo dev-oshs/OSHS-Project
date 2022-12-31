@@ -1,3 +1,4 @@
+
 // setting slider
 let previousSlide = 1
 let currentSlide = 1
@@ -124,7 +125,7 @@ let schoolEventList = [
     },
     {
         eventName: "Society",
-        occurrence: "Every Wednesday morning",
+        occurrence: "Every Wednesday afternoon",
         time: {
             from: "7:40am",
             to: "8:40am"
@@ -165,25 +166,19 @@ return eventShow
 let tmADt = new Date();
 let hour = tmADt.getHours();
 let minute = tmADt.getMinutes();
+let day = tmADt.getDay();
 
-if (hour >= 7 && hour <= 8) {
-    if (minute){}
-    eventContainer.innerHTML = showEvent(0);
+if (hour >= 7 && minute >= 40) {
+    if (hour <= 8 && minute <= 40){
+        eventContainer.innerHTML = showEvent(0);
+    }
 }
+tmADt.setHours(18, 25, 9, 2000)
 
-// setting up navbar
-let openNavBtn = document.querySelector("#open-nav-btn");
-let closeNavBtn = document.querySelector("#close-nav-btn");
-let navBar = document.querySelector(".nav-bar");
-
-openNavBtn.addEventListener("click", () => {
-    navBar.classList.add("nav-opened");
-    let a = document.createElement("a");
-    a.href = "#"
-    a.click();
-
-});
-closeNavBtn.addEventListener("click", () => {
-    navBar.classList.remove("nav-opened");
-});
-
+if (day == 3) {
+    if (hour >= 14 && minute >= 30) {
+        if (hour <= 15 && minute <= 0){
+            eventContainer.innerHTML = showEvent(1);
+        }
+    }
+}

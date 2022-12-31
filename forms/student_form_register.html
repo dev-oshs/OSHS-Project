@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Register | Student Form</title>
+</head>
+<body>
+    <main>
+        <div class="wrapper">
+            <div class="school-info">
+                <div class="school-logo">
+                    <a href="../">
+                        <img src="../assets/images/ojo_senior_high_logo.png" alt="ojo high school logo" width="200px">
+                    </a>
+                </div>
+                <div class="school-name-info">
+                    <h2 class="school-name">Ojo Senior High School</h2>
+                    <h3 class="info">Registration form</h3>
+                    <strong class="note">
+                        This form is only for member of 
+                        Ojo Senor High School.
+                    </strong>
+                </div>
+            </div>
+            <div class="form-container">
+                <form class="form">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" placeholder="i.e John">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" placeholder="i.e Doe">
+                    <label for="email">Last Name</label>
+                    <input type="email" id="email" placeholder="myemail@domain.name">
+                    
+                    <label for="class">Select class</label>
+                    <select id="class">
+                        <option value="null">Enter Class</option>
+                        <option value="SS1">SS1</option>
+                        <option value="SS2">SS2</option>
+                        <option value="SS3">SS3</option>
+                    </select>
+                    <label for="class_room">Class room</label>
+                    <input type="text" id="class_room" placeholder="A">
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password">
+                    <label for="confirm_password">Confirm Password</label>
+                    <input type="password" id="confirm_password" placeholder="Enter your password">
+                    <div class="teach-stud">
+                        <input type="radio" name="teacher-student" id="teacher"> Teacher
+                        <input type="radio" name="teacher-student" id="student"> Student
+                    </div>
+                    <div class="register-btn">
+                        <button id="submit" type="submit">Register</button>
+                    </div>
+                </form>
+            </div>
+            <div class="account">
+                <p class="text">
+                    Already have an account, 
+                    <a href="#">Log in</a>
+                </p>
+            </div>
+
+        </div>
+    </main>
+
+
+    <footer>
+        <p>Ojo Senior High School - OSHS</p>
+    </footer>
+</body>
+</html>

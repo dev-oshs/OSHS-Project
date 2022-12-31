@@ -48,74 +48,7 @@
     }
 }
 
-@media all and (max-width: 742px) {
-    header{
-        overflow: hidden;
 
-        .menu{
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .nav-bar{
-            transform: translateY(-100%);
-            width: 300px;
-            position: absolute;
-            top: 0;
-            right: 0;
-            height: 100vh;
-            z-index: 999;
-
-            button{
-                svg{
-                    display: block;
-                }
-            }
-
-            .primary-nav{
-                margin-top: 70px;
-
-                ul{
-                    flex-direction: column;
-
-                    .quick-links{
-                        margin-top: 20px;
-                    }
-
-   
-                }
-            }
-        }
-        .nav-opened{
-            transform: translateY(-4%);
-            transition: transform .5s ease-in;
-        }
-        .school-logo{
-            flex-direction: column;
-
-            .logo-img{
-                margin: 25px auto 0 auto;
-
-                .logo{
-                    width: 200px;
-                }
-            }
-
-            .logo-text{
-                margin: 10px auto 20px auto;
-                
-                text-align: center;
-                
-                .school-name{
-                    font-size: 2em;
-                }
-            }
-        }
-    }
-    
-
-
-}
 
 @media screen and (max-width: 647px) {
     .gallery-sec{
@@ -124,13 +57,6 @@
         }
     }
 
-    footer{
-        grid-template-columns: repeat(1, 280px);
-        grid-template-rows: repeat(3, 100px);
-        gap: 150px;
-
-    
-    }
     .school-academy-info{
         .info-container{
             .number-container{

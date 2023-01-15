@@ -7,40 +7,6 @@ $font: "Trebuchet MS";
 $hover-s-c: #d1a804;
 $hover-p-c: #05094b;
 
-*{
-    margin: 0;
-    padding: 0;
-}
-
-html{
-    scroll-behavior: smooth;
-}
-
-body{
-    background-color: $background-color;
-    font-family: $font;
-    overflow-x: hidden;
-
-    button{
-        cursor: pointer;
-    }
-
-    .under-line{
-        width: 100%;
-        height: 5px;
-        box-sizing: border-box;
-        background-color: $secondary-color;
-        transition: all .5s ease;
-    }
-    .sp{
-        margin-top: -75px;
-    }
-    .gsp{
-        //position: relative;
-        margin-top: -200px;
-    }
-}
-
 
 .image-slider-section{
     overflow: hidden;
@@ -63,7 +29,7 @@ body{
             border: none;
             transition: all 1s ease-in;
             
-            svg{
+            i{
                 animation: move .5s ease-in-out infinite alternate;
                 font-size: 3em;
                 color: $white;
@@ -103,11 +69,13 @@ body{
         }
     }
     .slides-container{
-        //display: flex;
-        .slide{
+        // display: flex;
+
+        .slide{        
+            //
             //transform: translateX(-100%); 
             display: none;   
-            transition: all .2s;
+            transition: all .2s ease;
             margin-bottom: 0;
             animation: fade 1s;
             
@@ -128,7 +96,7 @@ body{
         }
         
         .slide-active{
-            //transform: translateX(100%); 
+            //transform: translateX(100%);
             display: block;   
         }
     }
@@ -150,29 +118,6 @@ body{
         }
         .active-move-to-slide{
             background-color: $white;
-        }
-    }
-}
-
-
-.up-arrow{
-    text-align: right;
-    position: fixed;
-    bottom: 50px;
-    right: 50px;
-    z-index: 99;
-
-    a{
-        background-color: $secondary-color;
-        padding: 13px;
-        border-radius: 10px;
-        border: 2px solid $primary-color;
-        color: $white;
-        transition: background-color .5s ease;
-
-        &:hover{
-            background-color: $hover-p-c;
-            border: 2px solid $secondary-color;
         }
     }
 }
@@ -268,14 +213,13 @@ body{
 
     a{
         background-color: $secondary-color;
-        width: 70px;
-        height: 30px;
         padding: 10px;
-        border: none;
         border-radius: 15px;
         color: $white;
         text-decoration: none;
-        transition: all .5s ease;
+        position: relative;
+        top: -80px;
+
         &:hover + .gsp{
             background-color: $hover-s-c;
         }
@@ -285,7 +229,7 @@ body{
     }
 
     .gsp{
-        margin-top: -7px;
+        margin-top: -87px;
     }
 }
 
@@ -293,6 +237,8 @@ body{
     margin-top: 50px;
     margin-bottom: 25px;
     text-align: center;
+    padding: 10px;
+    background-color: #e9e7e7;
 
     h1{
         text-align: center;
@@ -304,41 +250,11 @@ body{
         font-size: 18pt;
     }
     .contact-info{
-        margin: 10px auto 0px auto;
-        width: 600px;
-        height: auto;
-        border: 2px solid $primary-color;
+        margin: 0 auto 0 auto;
+        width: 500px;
+        height: 650px;
         border-radius: 50px;
-        padding: 25px;
-        line-height: 50px;
-        background-color: $white;
-
-
-        .info{
-            width: auto;
-
-            a{
-                font-size: 18pt;
-                color: $black;
-            }
-        }
-    }
-    .more-info-btn{
-        text-align: center;
-        background-color: $secondary-color;
-        width: 70px;
-        height: 30px;
-        padding: 10px;
-        border: 2px solid $primary-color;
-        border-radius: 15px;
-        color: $white;
-        text-decoration: none;
-        transition: all .5s ease;
-        margin-top: -20px;
-
-        &:hover{
-            background-color: $hover-s-c;
-        }
+        padding: 15px;
     }
 }
 
@@ -413,19 +329,3 @@ body{
         opacity: 1;
     }
 }
-
-::-webkit-scrollbar{
-    background-color: $primary-color;
-    border-left: 3px solid $white;
-    border-right: 2px solid $white;
-}
-
-::-webkit-scrollbar-thumb{
-    background-color: $secondary-color;
-    color: $white;
-}
-::-webkit-scrollbar-corner{
-    background-color: $white;
-    //border-left: 3px solid $white;
-}
-

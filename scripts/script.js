@@ -1,49 +1,44 @@
 
 // setting slider
-let previousSlide = 1
-let currentSlide = 1
+let previousSlide = 0
+let currentSlide = 0
 
 // getting HTML element needed
 let slidesBtn = document.querySelector(".slide-arrows").childNodes
-let slides = document.querySelector(".slides-container").childNodes
+let slides = document.querySelectorAll(".slide");
 let slidesShortcutBtn = document.querySelector(".slide-shortcut-btn").childNodes
-let index = 0
+
+console.log(slides);
+
 // setting slider function
-const moveSlide = (prevSlide = 1, currSlide = 1) => {
-    index += 1
+const moveSlide = (prevSlide = 0, currSlide = 0) => {
     slides[prevSlide].classList.remove("slide-active");
     slides[currSlide].classList.add("slide-active");
     slidesShortcutBtn[prevSlide].classList.remove("active-move-to-slide");
     slidesShortcutBtn[currSlide].classList.add("active-move-to-slide");
-    // slides[prevSlide].style.transform = `translateX(${slides.length - prevSlide - 1 + "00"}%)`
-    // slides[currSlide].style.transform = `translateX(${slides.length - currSlide - 1 + "00"}%)`
-
-    // slides[prevSlide].style.transform = `translateX(${index * 100 - 100}%)`
-    // slides[currSlide].style.transform = `translateX(-${index * 100 - 100}%)`
-
 }
 // left arrow function
 slidesBtn[1].addEventListener("click", () => {
-    if (currentSlide == 1) {
-        previousSlide = 1
-        currentSlide = slides.length - 2
+    if (currentSlide == 0) {
+        previousSlide = 0;
+        currentSlide = slides.length - 1;
         moveSlide(previousSlide, currentSlide);
     } else {
-        previousSlide = currentSlide
-        currentSlide -= 2
+        previousSlide = currentSlide;
+        currentSlide -= 1;
         moveSlide(previousSlide, currentSlide);
     }
 });
 
 // right arrow function
 slidesBtn[3].addEventListener("click", () => {
-    if (currentSlide == slides.length - 2) {
-        previousSlide = slides.length - 2
-        currentSlide = 1
+    if (currentSlide == slides.length - 1) {
+        previousSlide = slides.length - 1;
+        currentSlide = 0;
         moveSlide(previousSlide, currentSlide);
     } else {
-        previousSlide = currentSlide
-        currentSlide += 2
+        previousSlide = currentSlide;
+        currentSlide += 1;
         moveSlide(previousSlide, currentSlide);
     }
 });
@@ -51,13 +46,13 @@ slidesBtn[3].addEventListener("click", () => {
 
 // setting autoplay
 setInterval(() => {
-    if (currentSlide == slides.length - 2) {
-        previousSlide = slides.length - 2
-        currentSlide = 1
+    if (currentSlide == slides.length - 1) {
+        previousSlide = slides.length - 1
+        currentSlide = 0
         moveSlide(previousSlide, currentSlide);
     } else {
         previousSlide = currentSlide
-        currentSlide += 2
+        currentSlide += 1
         moveSlide(previousSlide, currentSlide);
     }}, 6000
 );
@@ -67,50 +62,37 @@ setInterval(() => {
 // setting shortcut btn
 slidesShortcutBtn[1].addEventListener("click", () => {
     previousSlide = currentSlide
-    currentSlide = 1
+    currentSlide = 0
     moveSlide(previousSlide, currentSlide);
 })
 slidesShortcutBtn[3].addEventListener("click", () => {
     previousSlide = currentSlide
-    currentSlide = 3
+    currentSlide = 1
     moveSlide(previousSlide, currentSlide);
 })
 slidesShortcutBtn[5].addEventListener("click", () => {
     previousSlide = currentSlide
-    currentSlide = 5
+    currentSlide = 2
     moveSlide(previousSlide, currentSlide);
 })
 slidesShortcutBtn[7].addEventListener("click", () => {
     previousSlide = currentSlide
-    currentSlide = 7
+    currentSlide = 3
     moveSlide(previousSlide, currentSlide);
 })
 slidesShortcutBtn[9].addEventListener("click", () => {
     previousSlide = currentSlide
-    currentSlide = slides.length - 2
+    currentSlide = slides.length - 1
     moveSlide(previousSlide, currentSlide);
 })
 
 // and sliding function
-// for (i = 1; i < slides.length; i += 2) {
-//     slides[i].style.transform = `translateX(${slides.length - i - 1 + "00"}%)`
+// for (i = 0; i < slides.length; i++) {
+//     console.log(i);
+//     slides[i].style.transform = `translateX(${i + "00"}%)`
 // }
 
-console.log(slides);
 
-let upArrowBtn = document.querySelector(".up-arrow");
-
-const slideUp = () => {
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
-        upArrowBtn.style.display = "block"
-
-    } else {
-        upArrowBtn.style.display = "none"
-    }
-}
-
-window.addEventListener("scroll", slideUp);
-slideUp();
 
 let eventContainer = document.querySelector(".event-container");
 
@@ -173,7 +155,6 @@ if (hour >= 7 && minute >= 40) {
         eventContainer.innerHTML = showEvent(0);
     }
 }
-tmADt.setHours(18, 25, 9, 2000)
 
 if (day == 3) {
     if (hour >= 14 && minute >= 30) {
@@ -182,3 +163,13 @@ if (day == 3) {
         }
     }
 }
+
+// form.addEventListener("submit", (e) => {
+//     let data = {
+//         name: fullName.value,
+//         email: email.value,
+//         message: message.value
+//     }
+//     console.log(data);
+   
+// });

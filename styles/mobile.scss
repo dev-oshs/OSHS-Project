@@ -15,16 +15,9 @@
         grid-template-columns: repeat(2, 250px);
         grid-template-rows: repeat(2, 100px);
         height: auto;
-    
     }
 }
 @media all and (max-width: 950px) {
-    .gallery-sec{
-        .more-info{
-            grid-template-columns: repeat(2, 300px);
-            //grid-template-rows: repeat(1, 300px);
-        }
-    }
     .school-academy-info{
         height: auto;
         .info-container{
@@ -43,7 +36,14 @@
     .gallery-sec{
         .more-info{
             grid-template-columns: repeat(2, 300px);
-            grid-template-rows: repeat(2, 200px);
+        }
+        grid-template-rows: repeat(2, 200px);
+        a{
+            position: static;
+        }
+
+        .gsp{
+            margin-top: -7px;
         }
     }
 }

@@ -7,7 +7,65 @@ $font: "Trebuchet MS";
 $hover-s-c: #d1a804;
 $hover-p-c: #05094b;
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $font;
+    overflow-x: hidden;
+    background-color: $background-color;
+
+    button{
+        cursor: pointer;
+    }
+    
+    .under-line{
+        width: 100%;
+        height: 5px;
+        box-sizing: border-box;
+        background-color: $secondary-color;
+        transition: all .5s ease;
+    }
+    .sp{
+        margin-top: -75px;
+    }
+    .gsp{
+        margin-top: -200px;
+    }
+    
+    .up-arrow{
+        text-align: right;
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+        z-index: 999;
+    
+        a{
+            background-color: $secondary-color;
+            padding: 13px;
+            border-radius: 10px;
+            border: 2px solid $primary-color;
+            color: $white;
+            transition: background-color .5s ease;
+    
+            &:hover{
+                background-color: $hover-p-c;
+                border: 2px solid $secondary-color;
+            }
+        }
+    }
+}
+
+
+
 header{
+    font-family: $font;
     
     .contact-info{
         background-color: $primary-color;
@@ -20,7 +78,7 @@ header{
                 margin: 20px;
                 color: $white;
                 
-                svg{
+                i{
                     margin-right: 5px;
                     width: 50px;
                 }
@@ -78,7 +136,7 @@ header{
             border: none;
             color: $white;
 
-            svg{
+            i{
                 margin: 11px;
                 font-size: 24pt;
             }
@@ -101,7 +159,7 @@ header{
             border: none;
             color: $white;
             float: right;
-            svg{
+            i{
                 font-size: 24pt;
                 color: white;
                 display: none;
@@ -126,7 +184,7 @@ header{
 
 
                     .current{
-                        font-size: 1.3em;
+                        font-size: 1.2em;
                     }
                     a{
                         text-decoration: none;
@@ -162,7 +220,7 @@ header{
                                 font-size: 1.2em;
                                 transition: all 1s ease-out;
 
-                                & > svg{
+                                & > i{
                                     margin-left: 10px;
                                 }
                             }
@@ -178,8 +236,6 @@ header{
                             .drop-down-list{
                                 transition: all 1s ease-in-out;
                                 transform: translateY(-140%);
-
-
                             }
 
                             
@@ -221,7 +277,7 @@ header{
             z-index: 999;
 
             button, #close-nav-btn{
-                svg{
+                i{
                     display: block;
                 }
             }
@@ -251,9 +307,8 @@ header{
 
                                 .option{
                                     margin-left: -95px;
-                                    & > svg{
-
-                                        margin-left: auto;
+                                    & > i{
+                                        margin-left: 150px ;
                                         top: -20px;
                                         position: relative;
                                     }
@@ -261,6 +316,9 @@ header{
 
                                 .list-open{
                                     padding-top: 10px;
+                                }
+                                .drop-down-list{
+                                    transform: translateY(0);
                                 }
                             }
                         }
@@ -270,7 +328,6 @@ header{
         }
         .nav-opened{
             transform: translateY(-4%);
-            transition: transform .5s ease-in;
         }
         .school-logo{
             flex-direction: column;
@@ -310,6 +367,8 @@ footer{
     color: $white;
     justify-content: center;
     padding-top: 60px;
+    font-family: $font;
+
 
     .school-logo{
         a{
@@ -362,4 +421,23 @@ footer{
         gap: 150px; 
         height: auto; 
     }
+}
+
+::-webkit-scrollbar{
+    background-color: $primary-color;
+    border-left: 3px solid $white;
+    border-right: 2px solid $white;
+}
+
+::-ms-browse{
+    color: red;
+    background-color: red;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: $secondary-color;
+    color: $white;
+}
+::-webkit-scrollbar-corner{
+    background-color: $white;
 }

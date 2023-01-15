@@ -1,0 +1,44 @@
+h1 {
+  font-size: 30pt;
+}
+
+main {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+main .current-events {
+  margin-bottom: 50px;
+}
+main .events-list {
+  margin-top: 50px;
+}
+main .current-events .current-event-text, main .current-events .events-list-text, main .events-list .current-event-text, main .events-list .events-list-text {
+  text-align: center;
+}
+main .current-events .event-shower, main .events-list .event-shower {
+  text-align: center;
+}
+main .current-events .event-shower .event-container, main .events-list .event-shower .event-container {
+  margin: 20px auto 0px auto;
+  width: 600px;
+  height: auto;
+  border: 2px solid #141b80;
+  border-radius: 50px;
+  padding: 25px;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+main .current-events .event-shower .event-container h3, main .events-list .event-shower .event-container h3 {
+  text-align: center;
+}
+main .current-events .event-shower .event-container p, main .events-list .event-shower .event-container p {
+  font-size: 2em;
+  line-height: 50px;
+}
+main .current-events .event-shower .event-container .time, main .events-list .event-shower .event-container .time {
+  color: #141b80;
+}
+main .current-events .event-shower .event-container .under-line, main .events-list .event-shower .event-container .under-line {
+  margin-left: -50px;
+  width: 700px;
+}/*# sourceMappingURL=style.css.map */

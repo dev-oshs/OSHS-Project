@@ -15,7 +15,7 @@
 .image-slider-section .slide-arrows .arrow-container {
   width: 80px;
   height: 50px;
-  background-color: #ffcc00;
+  background-color: #066978;
   border: none;
   transition: all 1s ease-in;
 }
@@ -36,7 +36,7 @@
 .image-slider-section .slide-arrows .right:hover {
   border-top-left-radius: 75px;
   border-bottom-left-radius: 75px;
-  background-color: #d1a804;
+  background-color: #064752;
 }
 .image-slider-section .slide-arrows .left {
   border-top-right-radius: 10px;
@@ -49,7 +49,7 @@
 .image-slider-section .slide-arrows .left:hover {
   border-top-right-radius: 75px;
   border-bottom-right-radius: 75px;
-  background-color: #d1a804;
+  background-color: #064752;
   transition: all 1s ease-in;
 }
 .image-slider-section .slides-container .slide {
@@ -112,7 +112,7 @@
   line-height: 20px;
 }
 .about-section a {
-  background-color: #ffcc00;
+  background-color: #066978;
   width: 70px;
   height: 30px;
   padding: 10px;
@@ -123,7 +123,7 @@
   transition: all 0.5s ease;
 }
 .about-section a:hover {
-  background-color: #d1a804;
+  background-color: #064752;
 }
 
 .school-academy-info {
@@ -166,7 +166,7 @@
   border-radius: 50px;
 }
 .gallery-sec a {
-  background-color: #ffcc00;
+  background-color: #066978;
   padding: 10px;
   border-radius: 15px;
   color: #ffffff;
@@ -175,10 +175,10 @@
   top: -80px;
 }
 .gallery-sec a:hover + .gsp {
-  background-color: #d1a804;
+  background-color: #064752;
 }
 .gallery-sec a:hover {
-  background-color: #d1a804;
+  background-color: #064752;
 }
 .gallery-sec .gsp {
   margin-top: -87px;
@@ -237,7 +237,7 @@
 }
 .event-section .more-info-btn {
   text-align: center;
-  background-color: #ffcc00;
+  background-color: #066978;
   width: 70px;
   height: 30px;
   padding: 10px;
@@ -249,7 +249,7 @@
   margin-top: -20px;
 }
 .event-section .more-info-btn:hover {
-  background-color: #d1a804;
+  background-color: #064752;
 }
 
 @-webkit-keyframes move {

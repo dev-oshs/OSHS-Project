@@ -41,4 +41,15 @@ main .current-events .event-shower .event-container .time, main .events-list .ev
 main .current-events .event-shower .event-container .under-line, main .events-list .event-shower .event-container .under-line {
   margin-left: -50px;
   width: 700px;
+}
+
+@media screen and (max-width: 658px) {
+  main .current-events .event-shower .event-container, main .events-list .event-shower .event-container {
+    width: 100%;
+    padding: 0;
+    margin-right: 5px;
+  }
+  main .current-events .event-shower .event-container h1, main .current-events .event-shower .event-container h3, main .events-list .event-shower .event-container h1, main .events-list .event-shower .event-container h3 {
+    padding: 10px;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -1,5 +1,5 @@
 $primary-color : #141b80;
-$secondary-color: #ffcc00;
+$secondary-color: #625006;
 $background-color: #ffffff;
 $white: #ffffff;
 $black: #000000;
@@ -63,3 +63,20 @@ main{
 }
 
 
+@media screen and (max-width: 658px) {
+    main{
+        .current-events, .events-list{
+            .event-shower{
+                .event-container{
+                    width: 100%;
+                    padding: 0;
+                    margin-right: 5px;
+
+                    h1, h3{
+                        padding: 10px;
+                    }
+                }    
+            }   
+        }
+    }
+}
